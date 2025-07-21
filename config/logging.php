@@ -48,25 +48,26 @@ return [
     */
 
     'channels' => [
+        // stack : mengirim data log ke beberapa channel sekaligus, defaultnya hanya mengirim ke channel single
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],
             'ignore_exceptions' => false,
         ],
-
+        // single : mengirim data log ke single file
         'single' => [
             'driver' => 'single',
             'path' => storage_path('logs/laravel.log'),
             'level' => env('LOG_LEVEL', 'debug'),
         ],
-
+        // daily : mengirim data log ke single file, namun tiap hari akan di rotate file nya
         'daily' => [
             'driver' => 'daily',
             'path' => storage_path('logs/laravel.log'),
             'level' => env('LOG_LEVEL', 'debug'),
             'days' => 14,
         ],
-
+        // slack : mengirim data log ke slack chat
         'slack' => [
             'driver' => 'slack',
             'url' => env('LOG_SLACK_WEBHOOK_URL'),
@@ -95,7 +96,7 @@ return [
                 'stream' => 'php://stderr',
             ],
         ],
-
+        // syslog : mengirim data log ke syslog
         'syslog' => [
             'driver' => 'syslog',
             'level' => env('LOG_LEVEL', 'debug'),
@@ -105,7 +106,7 @@ return [
             'driver' => 'errorlog',
             'level' => env('LOG_LEVEL', 'debug'),
         ],
-
+        // null : tidak mengirim data log kemanapaun
         'null' => [
             'driver' => 'monolog',
             'handler' => NullHandler::class,

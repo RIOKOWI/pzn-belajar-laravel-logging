@@ -62,3 +62,20 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+## NOTE 
+UTANG BELAJAR PHP LOGGING
+
+## LOGGING CHANNEL
+- single : mengirim data log ke single file
+- daily : mengirim data log ke single file, namun tiap hari akan di rotate file nya
+- slack : mengirim data log ke slack chat
+- syslog : mengirim data log ke syslog
+- null : tidak mengirim data log kemanapaun
+- stack : mengirim data log ke beberapa channel sekaligus, defaultnya hanya mengirim ke channel single
+- secara default laravel menggunakan stack
+
+contoh di file :
+logging.php
