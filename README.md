@@ -82,3 +82,13 @@ logging.php
 
 ## LOG FACADE
 contoh di file :
+LogFacadeTest.php
+storage/logs/laravel.log
+
+## MULTIPLE LOG CHANNEL
+contoh di file :
+logging.php
+
+## MEMBUAT WEBHOOK URL
+slack.com
+contoh di file :

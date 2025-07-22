@@ -51,7 +51,8 @@ return [
         // stack : mengirim data log ke beberapa channel sekaligus, defaultnya hanya mengirim ke channel single
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['single'],
+            'channels' => ['single', 'slack', 'stderr'],
+            //multiple log channel
             'ignore_exceptions' => false,
         ],
         // single : mengirim data log ke single file
@@ -73,7 +74,7 @@ return [
             'url' => env('LOG_SLACK_WEBHOOK_URL'),
             'username' => 'Laravel Log',
             'emoji' => ':boom:',
-            'level' => env('LOG_LEVEL', 'critical'),
+            'level' => env('LOG_LEVEL_SLACK', 'error'),
         ],
 
         'papertrail' => [

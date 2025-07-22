@@ -18,8 +18,8 @@ class LogFacadeTest extends TestCase
     {
         Log::info("Hello Info");
         Log::warning("Hello Warning");
-        Log::error("Hello Error");
-        Log::critical("Hello Critical");
+        Log::error("Hello Error from Laravel to Slack!");
+        Log::critical("Slack should receive this!");
 
         // dikirim ke stack
 
