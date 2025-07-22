@@ -79,3 +79,6 @@ UTANG BELAJAR PHP LOGGING
 
 contoh di file :
 logging.php
+
+## LOG FACADE
+contoh di file :
