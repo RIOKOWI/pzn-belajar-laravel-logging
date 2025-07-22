@@ -25,4 +25,23 @@ class LogFacadeTest extends TestCase
 
         self::assertTrue(true);
     }
+
+    public function testContext()
+    {
+        Log::info("hello info", [ 'user' => 'rio']);
+                                // context
+
+
+        self::assertTrue(true);
+    }
+
+    public function testWithContext()
+    {
+        Log::withContext(['user' => 'mbud']);
+          // mengirim context yang sama
+        Log::info("hello info");
+        Log::warning("hello warning");
+
+        self::assertTrue(true);
+    }
 }

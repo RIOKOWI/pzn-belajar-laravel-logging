@@ -92,3 +92,11 @@ logging.php
 ## MEMBUAT WEBHOOK URL
 slack.com
 contoh di file :
+LogFacadeTest.php
+logging.php
+storage/logs/laravel.log
+.env
+
+## CONTEXT
+contoh di file :
+LogFacadeTest.php
