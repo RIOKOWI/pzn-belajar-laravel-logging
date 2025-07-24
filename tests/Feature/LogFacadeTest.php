@@ -44,4 +44,14 @@ class LogFacadeTest extends TestCase
 
         self::assertTrue(true);
     }
+
+    public function testSelectedChannel()
+    {
+        $slackLogger = Log::channel('slack');
+        $slackLogger->error("Hello slack"); // mengirim ke slack channel
+
+        Log::info("Hello Laravel"); //mengirim ke default channel;
+
+        self::assertTrue(true);
+    }
 }

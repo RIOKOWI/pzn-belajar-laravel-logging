@@ -100,3 +100,7 @@ storage/logs/laravel.log
 ## CONTEXT
 contoh di file :
 LogFacadeTest.php
+
+## SELECTED CHANNEL
+contoh di file :
+LogFacadeTest.php
