@@ -111,3 +111,6 @@ LogFacadeTest.php
 logging.php
 application.log
 
+## FORMATTER
+contoh di file :
+logging.php
