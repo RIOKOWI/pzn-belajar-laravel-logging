@@ -97,6 +97,15 @@ return [
                 'stream' => 'php://stderr',
             ],
         ],
+        'stderr' => [
+            'driver' => 'monolog',
+            'level' => env('LOG_LEVEL', 'debug'),
+            'handler' => StreamHandler::class,
+            'formatter' => env('LOG_STDERR_FORMATTER'),
+            'with' => [
+                'stream' => storage_path('logs/application.log'),
+            ],
+        ],
         // syslog : mengirim data log ke syslog
         'syslog' => [
             'driver' => 'syslog',
@@ -116,6 +125,8 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
+
+        
     ],
 
 ];

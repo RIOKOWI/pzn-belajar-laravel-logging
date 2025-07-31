@@ -54,4 +54,14 @@ class LogFacadeTest extends TestCase
 
         self::assertTrue(true);
     }
+
+    public function testFileHandler()
+    {
+        $filelogger = Log::channel('file');
+        $filelogger->info('hello world');
+        $filelogger->warning('hello world');
+        $filelogger->error('hello world');
+
+        self::assertTrue(true);
+    }
 }

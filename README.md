@@ -104,3 +104,10 @@ LogFacadeTest.php
 ## SELECTED CHANNEL
 contoh di file :
 LogFacadeTest.php
+
+## HANDLER
+contoh di file :
+LogFacadeTest.php
+logging.php
+application.log
+
