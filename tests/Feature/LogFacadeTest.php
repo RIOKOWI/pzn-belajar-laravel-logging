@@ -14,6 +14,8 @@ class LogFacadeTest extends TestCase
      *
      * @return void
      */
+
+    // LOG FACADE
     public function testLogging()
     {
         Log::info("Hello Info");
@@ -26,6 +28,7 @@ class LogFacadeTest extends TestCase
         self::assertTrue(true);
     }
 
+    // CONTEXT
     public function testContext()
     {
         Log::info("hello info", [ 'user' => 'rio']);
@@ -45,6 +48,7 @@ class LogFacadeTest extends TestCase
         self::assertTrue(true);
     }
 
+    // SELECTED CHANNEL
     public function testSelectedChannel()
     {
         $slackLogger = Log::channel('slack');
@@ -55,6 +59,7 @@ class LogFacadeTest extends TestCase
         self::assertTrue(true);
     }
 
+    // HANDLER
     public function testFileHandler()
     {
         $filelogger = Log::channel('file');

@@ -63,7 +63,13 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+## #########################################################################################################
 
+## SLIDE
+https://docs.google.com/presentation/d/1HC6mTN4IZBj-eB3T0Z-bWf4Id_1d0CD4vrDYWNrgGNQ/edit?slide=id.p#slide=id.p
+
+## SOURCE
+https://github.com/ProgrammerZamanNow/belajar-laravel-logging
 
 ## NOTE 
 UTANG BELAJAR PHP LOGGING
@@ -83,6 +89,7 @@ logging.php
 ## LOG FACADE
 contoh di file :
 LogFacadeTest.php
+LINE 18-29
 storage/logs/laravel.log
 
 ## MULTIPLE LOG CHANNEL
@@ -93,6 +100,7 @@ logging.php
 slack.com
 contoh di file :
 LogFacadeTest.php
+LINE -
 logging.php
 storage/logs/laravel.log
 .env
@@ -100,14 +108,17 @@ storage/logs/laravel.log
 ## CONTEXT
 contoh di file :
 LogFacadeTest.php
+LINE 31-49
 
 ## SELECTED CHANNEL
 contoh di file :
 LogFacadeTest.php
+LINE 51-60
 
 ## HANDLER
 contoh di file :
 LogFacadeTest.php
+LINE 62-72
 logging.php
 application.log
 
